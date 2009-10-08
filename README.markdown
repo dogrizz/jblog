@@ -41,7 +41,7 @@ katalogu z blogiem, czyli z katalogu **~/public_git/sp/** polecenie:
 jeśli nie chcemy wpisywac za kazdym razem calego polecenia modyfikujemy
 plik deploy.sh i od tej pory wystarczy że będąc w folderze z projektem użyjemy
 
-   ./deploy.sh
+    ./deploy.sh
 
 Po wykonaniu polecenia blog jest dostępny pod URI:
 
