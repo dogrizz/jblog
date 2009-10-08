@@ -14,11 +14,12 @@ Cała procedura może wyglądać tak:
 
 <pre>mkdir -p ~/public_git/
 cd ~/public_git/
-git clone git://github.com/⟨twój login na <b>githubie</b>⟩/jblog.git sp
+git clone git@github.com:twój login na <b>githubie</b>⟩/jblog.git sp
 </pre>
 
 gdzie nazwa katalogu *sp* to skrót (modulo polskie literki)
 od nazwy wykładu „Środowiska programisty”.
+Równie dobrze może być ustawiona inna nazwa.
 
 
 ## Jak zacząć?
@@ -37,9 +38,14 @@ katalogu z blogiem, czyli z katalogu **~/public_git/sp/** polecenie:
 
     jekyll ~/public_html/sp
 
+jeśli nie chcemy wpisywac za kazdym razem calego polecenia modyfikujemy
+plik deploy.sh i od tej pory wystarczy że będąc w folderze z projektem użyjemy
+
+   ./deploy.sh
+
 Po wykonaniu polecenia blog jest dostępny pod URI:
 
-<pre>http://sigma.inf.ug.edu.pl/~⟨twój login na <b>sigmie</b>⟩/sp/
+<pre>http://sigma.ug.edu.pl/~⟨twój login na <b>sigmie</b>⟩/sp/
 </pre>
 
 ## Kończymy instalację
@@ -47,24 +53,16 @@ Po wykonaniu polecenia blog jest dostępny pod URI:
 W *jBlogu* jest kilka napisów, które należy wymienić na swoje,
 na przykład, w pliku *index.html* znajdziemy:
 
-    title: WB_Blog
+    title: dzmitrow blog
 
 w plikach *_layouts/default.html* i :*_layouts/index.html*
 
-    <meta name="author" content="Włodek Bzyl" />.
+    <meta name="author" content="Dominik Zmitrowicz" />.
     ...
  
 w pliku *atom.xml*:
 
     <title>Włodek Bzyl</title>
-    <link href="http://inf.ug.edu.pl/~wbzyl/atom.xml" rel="self"/>
+    <link href="http://sigma.ug.edu.pl/~dzmitrow/atom.xml" rel="self"/>
     ...
 
-Logo przygotowałem w programie *inkscape*. 
-Plik *images/logo.svg* w formacie *SVG* zawiera 
-nazwę mojego bloga *WB@jBlog*.
-W pliku *SVG* literki składane są fontem *OTF*
-[Cyklop](http://nowacki.strefa.pl/cyklop.html). Komputerową
-wersję tego fontu przygotował Janusz M. Nowacki.
-    
-Oczywiście można też samemu przygotowac logo.
