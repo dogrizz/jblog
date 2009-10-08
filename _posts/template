@@ -1,0 +1,12 @@
+---
+layout: post
+title: USTAW TYTUL
+---
+
+# {{page.title}}
+
+##pierwszy akapit
+
+###podpunkt
+
+##drugi akapit
