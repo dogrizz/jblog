@@ -4,7 +4,7 @@ html {
   /* http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
   height: 100%; 
   margin-bottom: 1px;
-  background-color: #FEFEEB; 
+  background-color: #EEEEEE; 
   margin: 0 auto 0 44px; 
 }
 
@@ -14,8 +14,7 @@ html {
 
 .title {
   position: relative;
-  padding: 18px 0 0 0;
-  background-color: #FEFEEB; 
+  padding: 18px 0 0 0; 
 }
 
 .title a {
@@ -24,15 +23,15 @@ html {
   font-size: 100%;
   font-weight: bold;
   font-style: italic;
-  color: #FF2C2B;
   top: 28px;
   right: 0;
 }
 
 #home, #post {
   padding-top: 22px;
+  padding-bottom: 22px;
   border: solid #888;
-  border-width: 1px 0 1px 1px;
+  border-width: 1px 1px 1px 1px;
 }
 
 #home h1 {
@@ -45,7 +44,7 @@ html {
   font-style: italic;
   font-weight: bold;
   margin-bottom: 22px;
-  color: #FF2C2B;
+  color: #000;
 }
 
 #post h2, #post h3, #home h1 {
