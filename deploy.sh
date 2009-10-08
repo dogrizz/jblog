@@ -1,1 +1,1 @@
-jekyll /home/studinf/dzmitrow/public_html/rails3
+jekyll ~/public_git/railsBlog  ~/public_html/rails3 --auto >> /dev/null &
