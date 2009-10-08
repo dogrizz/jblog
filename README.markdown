@@ -62,7 +62,7 @@ w plikach *_layouts/default.html* i :*_layouts/index.html*
  
 w pliku *atom.xml*:
 
-    <title>Włodek Bzyl</title>
+    <title>dzmitrow blog</title>
     <link href="http://sigma.ug.edu.pl/~dzmitrow/atom.xml" rel="self"/>
     ...
 
