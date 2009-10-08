@@ -4,8 +4,7 @@ title: dzmitrow blog
 ---
 
 <div id="home" class="prepend-1 span-21>
-  
-  <h1>Posty</h1>
+    
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
