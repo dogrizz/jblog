@@ -43,6 +43,7 @@ plik deploy.sh i od tej pory wystarczy że będąc w folderze z projektem użyje
 
     ./deploy.sh
 
+Skrypt zrzuci do tła automatyczną aktualizacje. Czyli jeśli jakieś pliki zostaną zmienione bądź dodane zmiany zostaną zastosowane do wersji wyswietlanej.
 Po wykonaniu polecenia blog jest dostępny pod URI:
 
 <pre>http://sigma.ug.edu.pl/~⟨twój login na <b>sigmie</b>⟩/sp/
