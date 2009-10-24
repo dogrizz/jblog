@@ -1,7 +1,7 @@
 #!/bin/bash
 while [ true ]
 do
-	git pull
+	git pull &> /dev/null
 	sleep 600
 done
 then

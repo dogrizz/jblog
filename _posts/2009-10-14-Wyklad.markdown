@@ -54,7 +54,7 @@ Przykladowo:
 
 ##inne
 w rubym jak zmienna z duzej to traktowane jako stala
-thin??
+	thin ??
 
 ##wnioski
 takie jpa z tiles-ami ? o0
