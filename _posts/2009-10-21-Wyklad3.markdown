@@ -6,6 +6,6 @@ title: Wyklad 3
 # {{page.title}}
 ##<a href="http://sinatra.inf.ug.edu.pl/ti/sinatra/ruby">Notatki do wykładu</a>
 
-##Na potem:
+###Na potem:
 <a href="http://sinatra.inf.ug.edu.pl/ti/">Notatki do różnych technologii autorstwa dr Bzyla</a>
 
