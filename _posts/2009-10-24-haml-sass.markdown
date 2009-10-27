@@ -36,4 +36,5 @@ Inne przyklady mozna znalezc pod adresem <a href="http://haml-lang.com/tutorial.
 <p>
     „Sass makes CSS fun again.”<br/>
     To samo co w hamlu, tylko inny link do przykladow: <a href="http://sass-lang.com/tutorial.html">http://sass-lang.com/tutorial.html</a>
+    W jednej rzeczy SASS góruje nad CSS. Można zagnieżdzać i dziedziczyć style. To znacząco może poprawić szybkość tworzenia stylu.
 </p>
