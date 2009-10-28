@@ -107,6 +107,7 @@ pre {
   border-left: 5px solid #489690;
   /*margin-left: -47px;
   padding: 0 0 0 47px;*/
+  overflow:auto;
 }
 
 /* tabele */
