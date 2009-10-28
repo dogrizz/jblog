@@ -7,14 +7,33 @@ title: HAML-SASS
 
 ##<a href="http://haml-lang.com/">HAML</a>
 <p>
-	„Haml takes your gross, ugly templates and replaces them with veritable Haiku.”
+    „Haml takes your gross, ugly templates and replaces them with veritable Haiku.”
 </p>
 
-###
-
-###
+###Co to
+<p>
+    Inny sposób zapisywania stron internetowych. Najwazniejsza zmiana to nie ma znacznikow otwarcia i zamkniecia. Przykladowo:
+    {% highlight html %}
+	<div>
+	    jakis tekst
+	</div>
+    {% endhighlight %}
+    to w hamlu:
+<pre>%div
+  jakis tekst</pre>
+Inne przyklady mozna znalezc pod adresem <a href="http://haml-lang.com/tutorial.html">http://haml-lang.com/tutorial.html</a>
+</p>
+###Odczucia
+<p>
+    Po co komu i na co? o0 Czytelnosc nie jest dla mnie żadnym argumentem. Identacje możemy również zastosować w pliku html. 
+    W dodatku nie jestesmy zmuszeni do utrzymywania jakiejs narzuconej. W htmlu widzimy dokladnie gdzie sie zaczyna, a gdzie kończy znacznik.
+    Tutaj musimy patrzec na identacje co przy wiekszej strukturze(wielokrotnym zagłębieniu) może to być męczące.
+    Kod ostatecznie jest i tak konwertowany na html co potem powoduje dodatkowe zamieszanie przy debugowaniu strony.
+    Możliwe, podchodzę od złej strony i nie widze prawidlowego zastosowania jezyka.
+</p>
 
 ##<a href="http://sass-lang.com/">SASS</a>
 <p>
-	„Sass makes CSS fun again.”
+    „Sass makes CSS fun again.”<br/>
+    To samo co w hamlu, tylko inny link do przykladow: <a href="http://sass-lang.com/tutorial.html">http://sass-lang.com/tutorial.html</a>
 </p>
