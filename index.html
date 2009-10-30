@@ -5,10 +5,17 @@ title: dzmitrow blog
 
 <div id="home" class="prepend-1 span-11">
     
+  <blockquote>
+  <p>
+  Everything in the universe contains flaws, ourselves included. Even God does not attempt perfection in His creations. Only humankind has such foolish arrogance.
+  </p>
+  <p class="author">Cogitor Kwyna</p>
+  </blockquote>
+    
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  
+
 </div>
