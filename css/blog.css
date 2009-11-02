@@ -10,6 +10,8 @@ html {
 
 .site {
   background-color: white;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
 }
 
 .title {
@@ -70,8 +72,10 @@ blockquote {
   margin-left: 572px;
   padding: 18px 22px 0 22px;
   position: absolute;
-  background: #F2F1D6;    
-  color: #800;
+  background: #FFFFFF;    
+  color: #000;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
 }
 
 blockquote img {
@@ -82,7 +86,7 @@ blockquote img {
 blockquote p.author {
   margin-top: -1em;
   padding-right: 44px;
-  color: #800;
+  color: #000;
   font-style: italic;
   text-align: right;
 }
@@ -103,14 +107,11 @@ code {
   border: 1px solid #403B33;
 }
 
-pre code {
-  border: none;
-}
-
 pre {
   border-left: 5px solid #489690;
-  margin-left: -47px;
-  padding: 0 0 0 47px;
+  /*margin-left: -47px;
+  padding: 0 0 0 47px;*/
+  overflow:auto;
 }
 
 /* tabele */
