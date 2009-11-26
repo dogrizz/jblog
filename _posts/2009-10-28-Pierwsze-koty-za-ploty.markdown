@@ -7,10 +7,14 @@ title: Pierwsze koty za płoty
 
 ##Że jakie ToDo?!
 Nie stworzyłem listy kontaktów postanowiłem się pobawić i zrobić coś co od dawna zamierzałem.
-Napisałem prosty organizer. Projekt dostępny jest na githubie w dwóch wersjach:
-1) master - wersja, kórej używam. ma wrzucony authlogic by nikt z zewnątrz nie wszedl. Sama encja użytkownik nie jest do niczego wykorzystywana.
-2) as - wersja bardziej pod nasze zajęcia z wykorzystanym paperclip-em assetPackager-em itp.
+Napisałem prosty organizer. Projekt dostępny jest na githubie w dwóch wersjach:<br />
 
+*	master - wersja, kórej używam. ma wrzucony authlogic by nikt z zewnątrz nie wszedl. Sama encja użytkownik nie jest do niczego 
+wykorzystywana.<br />
+
+*	[as](http://github.com/dogrizz/ToDo/tree/as) - wersja pod nasze zajęcia z wykorzystanym paperclip-em assetPackager-em itp.
+
+[Tutaj](http://gen2.org:3752) dostepna jest wersja as do przeklikania.
 ##Pierwszy wynik
 Pierwszy test YSlow-a przeszedł z oceną 96 minusy za brak kompresji nagłówków i braku czasu ich wygaśnięcia.
 
@@ -68,7 +72,7 @@ W show i index dość podobne 5 linijek
 I śmiga ^^.
 
 ##Druga Ocena
-Ocena na tym etapie conajmniej mnie zaskoczyl YSlow ocenił stornę na zaledwie 76 pkt.
+Ocena na tym etapie conajmniej mnie zaskoczyla. YSlow ocenił stronę na zaledwie 76 pkt.
 Brakuje czasu wygaśnięcia nagłówków, kompresji nagłówków i javascript znalazł się w nagłówkach.
 
 ##AssetPackager

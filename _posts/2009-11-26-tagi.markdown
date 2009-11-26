@@ -6,15 +6,15 @@ title: Tagi
 # {{page.title}}
 
 ## Tagi z paluszka
-Na pierwszy ogień poszło tworzenie tagów ręcznie na podstawie showcastu http://railscasts.com/episodes/167-more-on-virtual-attributes
+Na pierwszy ogień poszło tworzenie tagów ręcznie na podstawie <a href="http://railscasts.com/episodes/167-more-on-virtual-attributes">tego</a> showcastu 
 autorstwa Ryan Bates-a.
-Samo praktycznie przepisanie tego co sie działo na filmiku nie jest zajmujące. Ciekawsze jest to co trzeba było zrobić później czyli wyszukiwanie.
+Samo praktycznie przepisanie tego co sie działo na filmiku nie jest zajmujące. Ciekawsze jest to co trzeba było zrobić później, czyli wyszukiwanie po tagach.
 Choć tak naprawde wiele się nie zmieniło ;)
-Przedewszystkim taggi zwracane są teraz w mapie:
+Przedewszystkim tagi zwracane są teraz w mapie:
 
 {% highlight ruby %}
 def tag_names
-	@tag_names || tags.map(&:name)
+  @tag_names || tags.map(&:name)
 end
 {% endhighlight %}
 
@@ -29,8 +29,9 @@ Co pozwala w widoku zrobić:
 Dzięki czemu po kliknięciu na link przechodzimy na stronę główną z ustawionym parametrem :tag.
 Odpowiednia obsługa w kontrolerze:
 {% highlight ruby %}
-tag = Tag.first(:conditions => ["name = ?",@tag])
-@tasks = tag.tasks
+  @tag = params[:tag]
+  tag = Tag.first(:conditions => ["name = ?",@tag])
+  @tasks = tag.tasks
 {% endhighlight %}
 
 i gotowe.
@@ -40,30 +41,23 @@ Przedewszystkim projekt chyba zmienił adres. Miałem jakieś dziwne kłopoty pr
 Pare chwil później. Stosując się do zaleceń z strony do modelu dochodzi:
 
 {% highlight ruby %}
-acts_as_taggable_on :tags
+  acts_as_taggable_on :tags
 {% endhighlight %}
 
 w widoku "Show":
 
 {% highlight ruby %}
 <% for tag in @task.tags %> 
-	<%= link_to tag.name, tasks_path(:view =>'tag', :tag => tag.name) %>
+  <%= link_to tag.name, tasks_path(:view =>'tag', :tag => tag.name) %>
 <% end %>
 {% endhighlight %}
 
 kontrolerze:
 {% highlight ruby %}
-@tasks = Task.find_tagged_with(@tag)
+  @tasks = Task.find_tagged_with(@tag)
 {% endhighlight %}
 
-i widoku index:
-{% highlight ruby %}
-<% for tag in @task.tags %> 
-	<%= link_to tag.name, tasks_path(:view =>'tag', :tag => tag.name) %>
-<% end %>
-{% endhighlight %}
-
-To ostatnie dziwnie podobne do tego co zrobiłem sam o0.
+Kod z widoku show dziwnie podobny do tego co zrobiłem sam o0.
 
 ##Podsumowanie
-Co kto lubi ja chyba wolę napisać coś ręcznie niż polegać na frameworkach. Tym bardziej gdy się przekonałem, że projekty te niekoniecznie muszą działać poprawnie.
+Co kto lubi ja chyba wolę proste rzeczy pisać ręcznie niż polegać na pluginach. Tym bardziej gdy się przekonałem, że projekty te niekoniecznie muszą działać poprawnie.
