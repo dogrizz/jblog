@@ -41,7 +41,7 @@ Pare chwil później. Stosując się do zaleceń z strony do modelu dochodzi:
 
 {% highlight ruby %}
 acts_as_taggable_on :tags
-{% end %}
+{% endhighlight %}
 
 w widoku "Show":
 
@@ -49,7 +49,7 @@ w widoku "Show":
 <% for tag in @task.tags %> 
 	<%= link_to tag.name, tasks_path(:view =>'tag', :tag => tag.name) %>
 <% end %>
-{% end %}
+{% endhighlight %}
 
 kontrolerze:
 {% highlight ruby %}
